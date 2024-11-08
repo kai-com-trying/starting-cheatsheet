@@ -1,0 +1,91 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{ 
+    background-color: burlywood;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    height: 200px
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 100px;
+    margin: auto;
+    text-align: center; /* Center the content */
+}
+
+nav ul li {
+    display: inline-block; /* Display list items inline */
+    margin: 0 20px; 
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+a{
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+}
+
+main{
+    width: 50%;
+    margin: 50px auto;
+}
+
+h1{
+    text-align: center;
+}
+
+table{
+    margin: 0 auto;
+    border-spacing: 0;
+    text-align: left;
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0;
+}
+
+div{
+    margin: 20px 0 80px 0;
+    scroll-margin-top: 250px;
+}
+
+#hue, #sat, #light{
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+    
+    nav ul li {
+        display: block; /* Stack nav items vertically */
+        margin: 10px 0; /* Add space between items */
+        font-size: 18px; /* Reduce font size */
+    }
+
+    header {
+        height: auto; /* Let the header adjust its height */
+    }
+
+    main {
+        width: 90%; /* Make content take more space on smaller screens */
+        margin: 20px auto;
+    }
+}
